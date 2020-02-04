@@ -1,0 +1,30 @@
+.footer {
+     height: 300px;
+}
+.delivery-form
+{
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 85px 0;
+
+    display: flex;
+    flex-direction: row;
+}
+.delivery-form__input-wrapper
+{
+    position: relative;
+
+    flex: 1 1 61,23%;
+
+    display: block;
+}
+.delivery-form__label
+{
+    position: absolute;
+}
+.delivery-form__submit
+{
+    flex-grow: 1;
+    
+}
