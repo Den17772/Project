@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <style> 
-        html{
-            min-height: 100%;
-        }
+    <style>
+      html {
+        min-height: 100%;
+      }
 
-        body{
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-            margin: 0;
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        margin: 0;
+      }
+      .header {
+        width: 100%;
 
-        }
-        .header{
-            width: 100%;
+        flex: 0 0 100px;
 
-            flex: 0 0 100px;
+        display: flex;
+        align-items: stretch;
+      }
 
-            display: flex;
-            align-items: stretch;
-        }
+      .logo {
+        background: red;
 
-        .logo{
-            background: red;
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 100px;
+      }
 
-            flex-shrink: 0;
-            flex-grow: 0;
-            flex-basis: 100px;
-        }
-        
-        .nav{
-            background: orange;
+      .nav {
+        background: orange;
 
-            flex-shrink: 1;
-            flex-grow: 1;
-            flex-basis: 0;
-        }
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 0;
+      }
 
-        .content{
-            width: 100%;
-            
-            flex: 1 1 400px;
+      .content {
+        width: 100%;
 
-            display: flex;
-            align-items: stretch;
-        }
+        flex: 1 1 400px;
 
-        .wrapper{
-            flex-shrink: 0;
-            flex-grow: 65;
-            flex-basis: 100px;
+        display: flex;
+        align-items: stretch;
+      }
 
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-        }
+      .wrapper {
+        flex-shrink: 0;
+        flex-grow: 65;
+        flex-basis: 100px;
 
-        .row{
-            flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
 
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-        }
+      .row {
+        flex: 1 1 0;
 
-        .news{
-            background: paleturquoise;
-            flex: 0 0 100px;
-        }
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+      }
 
-        .list{
-            background: orangered;
-            flex: 1 1 0;
-        }
+      .news {
+        background: paleturquoise;
+        flex: 0 0 100px;
+      }
 
-        .footer{
-            flex: 0 0 100px;
-            background: orange;
-        }
-        .navigation{
-            flex-shrink: 0;
-            flex-grow: 35;
-            flex-basis: 0;
+      .list {
+        background: orangered;
+        flex: 1 1 0;
+      }
 
-            background: black;
+      .footer {
+        flex: 0 0 100px;
+        background: orange;
+      }
+      .navigation {
+        flex-shrink: 0;
+        flex-grow: 35;
+        flex-basis: 0;
 
-        }
-
-        </style>
-</head>
-<body>
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
     <div class="header">
-        <div class="logo">Logo</div>
-        <div class="nav">Menu</div>
+      <div class="logo">Logo</div>
+      <div class="nav">Menu</div>
     </div>
     <div class="content">
-        <div class="wrapper">
-            <div class="row">
-                <div class="news">Newsfeed</div>
-                <div class="list">List of somesing</div>
-            </div>
-            <div class="footer">
-                Footer
-            </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="news">Newsfeed</div>
+          <div class="list">List of somesing</div>
         </div>
-        <div class="navigation">Navigation bar</div>
+        <div class="footer">
+          Footer
+        </div>
+      </div>
+      <div class="navigation">Navigation bar</div>
     </div>
-</body>
+  </body>
 </html>
